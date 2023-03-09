@@ -23,7 +23,7 @@ main{
     display: grid;
     grid-template-areas:
      'user chat'
-     'containe containe';
+     'containe container__message';
     grid-template-rows: 0.30fr 2fr;
      grid-template-columns: 1fr 2fr;
     margin-top: 5vh;
@@ -34,14 +34,33 @@ main{
 }
 
 .card__image{
-    width: 75px;
-    height:75px;
+    width: 70px;
+    height:70px;
     border-radius: 50%;
     object-fit: contain;
 }
 
+.card{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-left: 25px;
+    height: 10vh;
+    background-color: rgb(0, 0, 0,20%);
+    border-bottom: 0.1px solid #3A4D5A;
+}
+
 .container{
-    background-color: brown;
+    display: flex;
+    flex-direction: column;
+    border-right: 0.1px solid black;
+}
+
+.container .card:hover{
+    background-color: rgb(0,0,0,0.3);
+}
+.container__message{
+    background-color: bisque;
 }
 .user{
     background-color:#003946;
@@ -58,6 +77,11 @@ main{
     width: 75px;
     height: 75px;
     border-radius: 50%;
+}
+.pesquisa{
+    width: 70%;
+    height: 10%;
+    background-color: #4C97A8;
 }
 ul,li{
     gap: 1em;
