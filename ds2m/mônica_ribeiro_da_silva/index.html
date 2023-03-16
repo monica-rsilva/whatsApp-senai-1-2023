@@ -2,39 +2,63 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <script src="https://kit.fontawesome.com/c968ad7630.js" crossorigin="anonymous"></script>
     <script src="index.js" defer type="module"></script>
-    <title> Clone WhatsApp </title>
+    <title>WhatsApp</title>
 </head>
 <body>
-
-    <header></header>
+    <header></header>  
 
     <main>
-        <div class="user">
-            <img class="user__img" src="./img/contact3.png" alt="user">
-            <ul> 
+
+    <div class="contacts">
+        <div class="nav_user">
+            <img src="user/user_photo.jpg" class="user_photo">
+            <ul class="icons">
                 <li>
                     <i class="fa-solid fa-user-group"></i>
                 </li>
-
                 <li>
-                    <i class="fa-solid fa-circle-notch"></i>
+                    <i class="fa-solid fa-message"></i>
                 </li>
-
                 <li>
                     <i class="fa-solid fa-ellipsis-vertical"></i>
                 </li>
             </ul>
         </div>
-        <div class="chat" id="chat"></div>
-        <div class="container" id="container"> </div>
-        <div class="container__message" id="container__message"></div>
-    </main>
+        <div class="div_search">
+            <input type="search" placeholder="Pesquise ou inicie uma conversa...">
+            <button>
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </div>
+        <div class="container" id="container"></div>
+    </div>
+    <div class="chat_messages">
 
-    <footer class="footer__text" id="footer__text"></footer>
+            <div class="chat" id="chat"></div>
+
+            <div class="div_text">
+                <li>
+                    <i class="fa-solid fa-face-laugh"></i>
+                </li>
+                <li>
+                    <i class="fa-solid fa-paperclip"></i>
+                </li>
+                <input type="text" class="input_text" placeholder="Mensagem">
+
+                <li>
+                    <i class="fa-solid fa-microphone"></i>
+                </li>
+            </div>
+
+        </ul>
+    </div>
+
+</main>
 
 </body>
 </html>
